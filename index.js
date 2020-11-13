@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+const path = require('path');
+const PORT = process.env.PORT || 3000;
+
+app.use(express.static(path.join(__dirname, 'public')))
 
 var neo4j = require('neo4j-driver');
 var driver = neo4j.driver('bolt://34.224.17.116:51853', neo4j.auth.basic('neo4j', 'panels-computations-concurrence'));
@@ -25,9 +28,9 @@ app.get('/test', (req, res) => {
     });
 })
 
-app.listen(port, (err) => {
+app.listen(PORT, (err) => {
   if (err) {
       throw new Error("serveur don't listen");
   }
-  console.log(`Server is listening on port ${port}`);
+  console.log(`Server is listening on port ${PORT}`);
 });
