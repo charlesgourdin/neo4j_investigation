@@ -6,6 +6,8 @@ You are an MI6 analyst based in London. Some agents have been under investigatio
 
 ## Graph schema
 
-<img src="public/schema.png" alt="schema">
+<p align="center">
+<img src="public/schema.png" alt="schema" width="350">
+</p>
 
 API endpoint : https://murmuring-hollows-41110.herokuapp.com/
