@@ -26,4 +26,4 @@ First of all, the first thing that challenges me in the diagram is the unique re
 But let's imagine what the investigation could have yielded in such a case. The idea in this first request is to verify that there is no suspicious relationship between an officer and a person related to the same crime. We will therefore verify that they do not know each other, that they have never called each other and that they are not related. 
 
 The result can be seen at the following endpoint and logically does not give any conclusive result. 
--> ### /investigation-result
+### https://murmuring-hollows-41110.herokuapp.com/investigation-result
